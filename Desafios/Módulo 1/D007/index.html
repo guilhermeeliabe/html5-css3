@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Flexível</title>
+</head>
+<body>
+    <h1>Imagem flexível</h1>
+    <p></p>
+
+    <picture>
+        <source media="(max-width: 770px)" srcset="img/paisagem-p.png" type="image/png"> <!-- Se eu estiver correto, o tamanho maximo do menor é a dimensão do tamanho maior q ele, no caso o médio -->
+        <source media="(max-width: 1250px)" srcset="img/paisagem-m.png" type="image/png"> <!-- Assim como o tamanho máximo do tamanho médio é a dimensão da maior imagem -->
+        <img src="img/paisagem-g.png" alt="Imagem Flexivel">    
+    </picture>
+</body>
+</html>
