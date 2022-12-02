@@ -7,12 +7,20 @@
     <title>Fundo Fixo de Tela</title>
     <style>
         body {
+            
             height: 98vh;
             background-color: #000;
             background-image: url(images/wallpaper002.jpg);
             background-position: center top;
+            /* Desativa a repetição do background-image */
             background-repeat: no-repeat;
+            /* Torna a imagem responsiva a viewport, sempre cobrindo 100% (ativando o height maximo da viewport) */
             background-size: cover;
+            /* Desativa a rolagem do plano de fundo */
+            background-attachment: fixed;
+            
+
+            /*background:black url(images/wallpaper002.jpg) center top no-repeat fixed; */
         }
 
         main {
